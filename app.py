@@ -14,6 +14,9 @@ st.set_page_config(
 
 st.sidebar.title("Navigation")
 st.sidebar.write("Global Book Industry")
+st.sidebar.markdown("### Members")
+st.sidebar.write("• Trương Chí Bình - 10325004")
+st.sidebar.write("• Tống Minh Anh - 10325005")
 st.sidebar.markdown("---")
 
 page = st.sidebar.radio(
@@ -35,6 +38,7 @@ page = st.sidebar.radio(
 )
 
 st.title("GLOBAL BOOK INDUSTRY")
+
 if page == "Introduction":
 
     st.header("Introduction")
@@ -46,6 +50,18 @@ if page == "Introduction":
     and economic disparities across countries have significantly influenced how books are produced,
     distributed, and consumed worldwide.
     """)
+    st.image(
+        "books.jpg"
+    )
+    st.image("book 2.jpg")
+    
+    st.markdown("""
+        <style>
+        [data-testid="stAppViewContainer"] {
+        background-color: #DDEEFF;
+    }
+    </style>
+    """, unsafe_allow_html=True)
     
 
 if page == "Conclusion":
@@ -62,6 +78,17 @@ if page == "Conclusion":
     multiple factors should be considered to dispel misconceptions and minimize inefficiency. 
     Hopefully, this project is useful for both academic study and practical decision-making in the book industry.
     """)
+    
+    st.markdown("""
+        <style>
+        [data-testid="stAppViewContainer"] {
+        background-color: #DDEEFF;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    st.image("reading book.jpeg")
+    st.image("reading book 2.jpeg")
 
 if page == "Plot 1: Global Distribution of Annual Books Read and Top 10 Countries by Books Read Per Year":
 
@@ -498,7 +525,6 @@ if page == "Plot 4: Percentage of E-Book and Printed Book Purchases by Country (
 
     ax.set_yticklabels(df["Country"])
 
-    # X axis limit
     ax.set_xlim(0, 65)
 
     ax.set_title(
@@ -1054,8 +1080,6 @@ A striking observation is the dominance of Genre Fiction across almost all ratin
 In contrast, the Novice and Famous groups show the lowest output. For Novices, this likely represents the "barrier to entry" in the publishing world. For Famous authors, the lower count compared to the Intermediate group suggests a shift from quantity to quality, where established icons may focus on a few high-impact releases rather than high-volume production. Ultimately, the chart highlights that while fiction drives the numbers, the Nonfiction sector remains a steady, albeit smaller, specialized niche across all professional tiers.
 """) 
     
-    
-# CUSTOM THEME
 
 st.markdown("""
 <style>
