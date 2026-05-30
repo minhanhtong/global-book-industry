@@ -193,16 +193,16 @@ if page == "Plot 2: Top 10 Highest GDP Countries":
         top10["Country"],
         top10["GDP(constant dollars)"] / 1e3,
         color=[
-            "#CDB4DB",  # pastel tím
-            "#FFC8DD",  # pastel hồng
-            "#BDE0FE",  # pastel xanh
-            "#A2D2FF",  # pastel xanh trời
-            "#E0BBE4",  # tím lavender
-            "#FDCBDF",  # hồng nhạt
-            "#CDE7FF",  # xanh icy
-            "#D7C6F5",  # tím soft
-            "#B5EAD7",  # xanh mint pastel
-            "#FFDAEC"   # hồng pastel sáng
+            "#CDB4DB",  
+            "#FFC8DD",  
+            "#BDE0FE",  
+            "#A2D2FF",  
+            "#E0BBE4",  
+            "#FDCBDF",  
+            "#CDE7FF", 
+            "#D7C6F5", 
+            "#B5EAD7",  
+            "#FFDAEC"   
         ]
     )
 
