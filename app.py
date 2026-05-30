@@ -6,6 +6,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 
+st.set_page_config(
+    page_title="Global Book Industry",
+    page_icon="📚",
+    layout="wide"
+)
+
 st.sidebar.title("Navigation")
 st.sidebar.write("Global Book Industry")
 st.sidebar.markdown("---")
@@ -40,6 +46,7 @@ if page == "Introduction":
     and economic disparities across countries have significantly influenced how books are produced,
     distributed, and consumed worldwide.
     """)
+    
 
 if page == "Conclusion":
     st.header("Conclusion")
@@ -304,19 +311,24 @@ if page == "Plot 3: Global Book Sales by Format":
     fig.patch.set_facecolor("#FFFDF8")
 
     st.pyplot(fig)
-    st.write("""
-        The chart presents global book sales by format from 2017 to 2027, measured in billions of US dollars. The data compares three major formats in the publishing industry: printed books, e-books, and audiobooks.
+    st.markdown("""
+The chart presents global book sales by format from 2017 to 2027, measured in billions of US dollars.
 
-In 2017, printed book sales reached approximately $71.5 billion, which was substantially higher than e-book sales at around $11.3 billion. Print sales rose slightly to about $73.1 billion in 2018 before declining to roughly $65.9 billion in 2020. However, the market showed signs of recovery afterward, with printed book sales increasing again to around $70.7 billion in 2021 and stabilizing at approximately $67.1 billion by 2027.
+In 2017, printed book sales reached approximately 71.5 billion dollars, which was substantially higher than e-book sales at around 11.3 billion dollars.
 
-E-book sales exhibit a steady upward trend over the observed period. Starting at approximately $11.3 billion in 2017, e-book revenue gradually increases and is projected to reach about $15.3 billion by 2027. Although the growth rate is moderate, the data suggests a stable expansion of the e-book market.
+Print sales rose slightly to about 73.1 billion dollars in 2018 before declining to roughly 65.9 billion dollars in 2020.
 
-Audiobooks represent the fastest-growing segment among the three formats. First appearing significantly in the data around 2021 with sales of approximately $4.85 billion, and continues to rise steadily, reaching an estimated $5.83 billion by 2027.
+However, the market showed signs of recovery afterward, with printed book sales increasing again to around 70.7 billion dollars in 2021 and stabilizing at approximately 67.1 billion dollars by 2027.
+
+E-book sales exhibit a steady upward trend over the observed period. Starting at approximately 11.3 billion dollars in 2017, e-book revenue gradually increases and is projected to reach about 15.3 billion dollars by 2027.
+
+Audiobooks represent the fastest-growing segment among the three formats. First appearing significantly in the data around 2021 with sales of approximately 4.85 billion dollars, and continuing to rise steadily, reaching an estimated 5.83 billion dollars by 2027.
 """)
+    
     
 if page == "Plot 5: Reason why people buy books":
 
-    st.title("Estimated share of the population that purchased an e-book/a printed book in 2020")
+    st.title("Reason why people buy books")
 
     data = {
         'Reason': [
@@ -908,13 +920,13 @@ if page == "Plot 9: Top 10 Authors by Number of Books":
 
     ax.set_xlabel(
         "Number of Books",
-        fontsize=12,
+        fontsize=18,
         color="#4A6572"
     )
 
     ax.set_ylabel(
         "Authors",
-        fontsize=12,
+        fontsize=18,
         color="#4A6572"
     )
 
@@ -986,7 +998,7 @@ if page == "Plot 10: Distribution of Author Ratings: Fiction vs. Non-fiction":
             ratings[i],
             str(fiction[i]),
             va='center',
-            fontsize=10,
+            fontsize=18,
             fontweight='bold',
             color="#2D6A4F"
         )
@@ -996,7 +1008,7 @@ if page == "Plot 10: Distribution of Author Ratings: Fiction vs. Non-fiction":
             ratings[i],
             str(nonfiction[i]),
             va='center',
-            fontsize=10,
+            fontsize=18,
             fontweight='bold',
             color="#2D6A4F"
         )
@@ -1010,13 +1022,13 @@ if page == "Plot 10: Distribution of Author Ratings: Fiction vs. Non-fiction":
 
     ax.set_xlabel(
         "Number of Authors",
-        fontsize=12,
+        fontsize=18,
         color="#2D6A4F"
     )
 
     ax.set_ylabel(
         "Rating Category",
-        fontsize=12,
+        fontsize=18,
         color="#2D6A4F"
     )
 
@@ -1040,21 +1052,24 @@ The analysis of book counts reveals a non-linear relationship between an author'
 A striking observation is the dominance of Genre Fiction across almost all ratings. For Intermediate and Excellent authors, fiction titles outnumber nonfiction by a wide margin reaching a peak of over 500 books for Intermediate fiction. This indicates that the fiction market is likely the primary engine of growth and volume in the industry.
 
 In contrast, the Novice and Famous groups show the lowest output. For Novices, this likely represents the "barrier to entry" in the publishing world. For Famous authors, the lower count compared to the Intermediate group suggests a shift from quantity to quality, where established icons may focus on a few high-impact releases rather than high-volume production. Ultimately, the chart highlights that while fiction drives the numbers, the Nonfiction sector remains a steady, albeit smaller, specialized niche across all professional tiers.
-""")
+""") 
     
     
 # CUSTOM THEME
 
-st.set_page_config(
-    page_title="Global Book Industry",
-    page_icon="📚",
-    layout="wide"
-)
 st.markdown("""
 <style>
 
 .main {
     background: linear-gradient(to right, #fdfbfb, #ebedee);
+}
+
+.stMarkdown,
+.stText,
+p,
+div[data-testid="stMarkdownContainer"] p {
+    font-size: 18px !important;
+    line-height: 1.8;
 }
 
 section[data-testid="stSidebar"] {
