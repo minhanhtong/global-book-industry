@@ -45,7 +45,7 @@ if page == "Introduction":
         """
         <style>
         [data-testid="stAppViewContainer"] {
-            background-image: url("https://www.pixelstalk.net/wp-content/uploads/2025/06/A-serene-scene-of-a-bookshelf-wallpaper-with-fairy-lights-draped-over-the-shelves-casting-a-gentle-glow.webp");
+            background-image: url("https://www.pixelstalk.net/wp-content/uploads/2025/06/Bookshelf-lit-by-soft-fairy-lights-and-stacked-with-romance-novels.webp");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -81,7 +81,7 @@ if page == "Conclusion":
         """
         <style>
         [data-testid="stAppViewContainer"] {
-            background-image: url("https://www.pixelstalk.net/wp-content/uploads/2025/06/A-serene-scene-of-a-bookshelf-wallpaper-with-fairy-lights-draped-over-the-shelves-casting-a-gentle-glow.webp");
+            background-image: url("https://www.pixelstalk.net/wp-content/uploads/2025/06/Bookshelf-lit-by-soft-fairy-lights-and-stacked-with-romance-novels.webp");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
