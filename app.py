@@ -40,9 +40,31 @@ page = st.sidebar.radio(
 st.title("GLOBAL BOOK INDUSTRY")
 
 if page == "Introduction":
+    
+    st.markdown(
+        """
+        <style>
+        [data-testid="stAppViewContainer"] {
+            background-image: url("https://www.pixelstalk.net/wp-content/uploads/2025/06/A-serene-scene-of-a-bookshelf-wallpaper-with-fairy-lights-draped-over-the-shelves-casting-a-gentle-glow.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )  
+    st.markdown("""
+    <style>
+    h1, h2, h3, p, div {
+        color: white !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
     st.header("Introduction")
-
+    
     st.write("""
     The global book publishing industry remains an essential part of the cultural and knowledge economy, 
     continuously evolving alongside technological advancements and changing consumer behaviors. 
@@ -50,23 +72,36 @@ if page == "Introduction":
     and economic disparities across countries have significantly influenced how books are produced,
     distributed, and consumed worldwide.
     """)
-    st.image(
-        "books.jpg"
-    )
-    st.image("book 2.jpg")
-    
-    st.markdown("""
-        <style>
-        [data-testid="stAppViewContainer"] {
-        background-color: #DDEEFF;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+
     
 
 if page == "Conclusion":
-    st.header("Conclusion")
+    
+    st.markdown(
+        """
+        <style>
+        [data-testid="stAppViewContainer"] {
+            background-image: url("https://www.pixelstalk.net/wp-content/uploads/2025/06/A-serene-scene-of-a-bookshelf-wallpaper-with-fairy-lights-draped-over-the-shelves-casting-a-gentle-glow.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    st.markdown("""
+    <style>
+    h1, h2, h3, p, div {
+        color: white !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
+    st.header("Conclution")
+    
     st.write("""
     In conclusion, the global book industry landscape is diverse. It is necessary 
     for publishers to identify which factors to consider when strengthening sales strategies. 
@@ -78,17 +113,6 @@ if page == "Conclusion":
     multiple factors should be considered to dispel misconceptions and minimize inefficiency. 
     Hopefully, this project is useful for both academic study and practical decision-making in the book industry.
     """)
-    
-    st.markdown("""
-        <style>
-        [data-testid="stAppViewContainer"] {
-        background-color: #DDEEFF;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-    
-    st.image("reading book.jpeg")
-    st.image("reading book 2.jpeg")
 
 if page == "Plot 1: Global Distribution of Annual Books Read and Top 10 Countries by Books Read Per Year":
 
