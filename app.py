@@ -65,13 +65,15 @@ if page == "Introduction":
 
     st.header("Introduction")
     
-    st.write("""
+    st.markdown("""
+    <p style="font-size:22px;">
     The global book publishing industry remains an essential part of the cultural and knowledge economy, 
     continuously evolving alongside technological advancements and changing consumer behaviors. 
     In recent years, the rise of digital platforms, changing reading habits,
     and economic disparities across countries have significantly influenced how books are produced,
     distributed, and consumed worldwide.
-    """)
+    </p>
+    """, unsafe_allow_html=True)
 
     
 
@@ -102,7 +104,8 @@ if page == "Conclusion":
 
     st.header("Conclution")
     
-    st.write("""
+    st.markdown("""
+    <p style="font-size:22px;">
     In conclusion, the global book industry landscape is diverse. It is necessary 
     for publishers to identify which factors to consider when strengthening sales strategies. 
     Our project delved into 4 main components of business planning and strategies: market evaluation, 
@@ -112,7 +115,8 @@ if page == "Conclusion":
     The analysis of data visualization suggested that when developing products and implementing sales strategies,
     multiple factors should be considered to dispel misconceptions and minimize inefficiency. 
     Hopefully, this project is useful for both academic study and practical decision-making in the book industry.
-    """)
+    </p>
+    """, unsafe_allow_html=True)
 
 if page == "Plot 1: Global Distribution of Annual Books Read and Top 10 Countries by Books Read Per Year":
 
