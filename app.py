@@ -102,7 +102,7 @@ if page == "Conclusion":
     </style>
     """, unsafe_allow_html=True)
 
-    st.header("Conclution")
+    st.header("Conclusion")
     
     st.markdown("""
     <p style="font-size:22px;">
